@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/Form/style.css">
+</head>
+<body>
+    <form action="" class="form">
+        <div class="container-step1 hidden" id="step1">
+            <div class="colomn">
+                <div class="colomn2">
+                    <div class="col">
+                        <div class="row1">
+                            <div id="col1" >
+                                <div id="label1" class="label">
+                                    <div class="label-step1">
+                                        <label class="details">Nama Lengkap</label><br>
+                                    </div>
+                                    <input class="inputt" type="text" id="nama" onInput="checkNama()" placeholder="Type here" required>
+                                    <div class="pop" id="popup-name">
+                                        *Input cannot be empty
+                                    </div>
+                                </div>
+            
+                                <div class="row2" id="label2">
+                                    <div class="label-step1">
+                                        <label class="details">Tanggal Lahir</label><br>
+                                    </div>
+                                    <input class="inputt" type="date" id="tanggal" required>
+                                    <div class="pop" id="popup-tanggal">
+                                        *Input cannot be empty
+                                    </div>
+                                    <div class="pop" id="umur">
+                                        *Minimum age 17 years old
+                                    </div>
+                                    <div class="pop" id="max-umur">
+                                        *Maximum age 100 years old
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div id="col2">
+                                <div id="label3">
+                                    <div class="label-step1">
+                                        <label class="details">Tempat Lahir</label><br>
+                                    </div>
+                                    <input class="inputt" type="text" id="tempat" placeholder="Type here" required>
+                                    <div class="pop" id="popup-tempat">
+                                        *Input cannot be empty
+                                    </div>
+                                </div>
+            
+                                <div class="row2" id="label4">
+                                    <div class="label-step1">
+
+                                        <label class="details">Jenis Kelamin</label><br>
+                                    </div>                                
+                                    <div class="radio-group">
+                                        <input type="radio" name="dott" id="male">
+                                        <label class="labell" for="male">Laki-laki</label>
+                                        
+                                        <input type="radio" name="dott" id="female">
+                                        <label class="labell" id="labell2" for="female">Perempuan</label>
+                                    </div>
+                                    <div class="pop" id="popup-kelamin">
+                                        *Choose one
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="roww2">
+
+                        <div id="button">
+                            <button href="" id="send">NEXT ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="/Form/script.js"></script>
+</body>
+</html>
